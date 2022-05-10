@@ -1,0 +1,33 @@
+<div class="container">
+  <div id="dataInfo">
+    <h4>Select the best match with more details</h4>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner row w-100 mx-auto">
+        <div class="carousel-item col-md-4 active">
+          <div class="card">
+            <img
+              class="card-img-top img-fluid"
+              src="https://filmykeeday.com/wp-content/uploads/2016/08/Shruti-Haasan.jpg"
+              width="50"
+              height="50"
+              alt="Card image cap"
+              (click)="onImgClicked()"
+            />
+            <div class="card-body">
+              <p><b>Swetha</b></p>
+              <p class="card-text">
+                26Yrs, 5ft 2in, Tamil,Nair,MBBS,Doctor,Chennai,Tamilnadu,India.
+              </p>
+              <button style="color:green" (click)="clickedYes()">Yes</button
+              >&nbsp;
+              <button style="color:red" (click)="clickedNo()">No</button>&nbsp;
+              <button style="color:orange" (click)="clickedShortlist()">
+                Shortlist
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

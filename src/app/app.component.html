@@ -1,0 +1,66 @@
+<welcome></welcome>
+<div class="container">
+  <div id="dataInfo">
+    <h4>Select the best match</h4>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner row w-100 mx-auto">
+        <div class="carousel-item col-md-4 active">
+          <div class="card">
+            <img
+              class="card-img-top img-fluid"
+              src="https://filmykeeday.com/wp-content/uploads/2016/08/Shruti-Haasan.jpg"
+              width="20"
+              height="20"
+              alt="Card image cap"
+              (click)="onImgClicked()"
+            />
+            <div class="card-body">
+              <p><b>Swetha</b></p>
+              <p class="card-text">
+                26Yrs, 5ft 2in, Tamil,Nair,MBBS,Doctor,Chennai,Tamilnadu,India.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card">
+            <img
+              class="card-img-top img-fluid"
+              src="http://images.indiatvnews.com/lifestylelifestyle/2015/1434461898karisma-kapoor.jpg"
+              width="20"
+              height="20"
+              alt="Card image cap"
+              (click)="onImgClicked()"
+            />
+            <div class="card-body">
+              <p><b>Krushna</b></p>
+              <p class="card-text">
+                27Yrs, 5ft 5in, Tamil,Nair,MBBS,Doctor,Chennai,Tamilnadu,India.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Sample code to display json data-->
+      <div class="card" *ngFor="let prf of profiles">
+        <img
+          class="card-img-top img-fluid"
+          [src]="prf.imageUrl"
+          width="50"
+          height="50"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <p>
+            <b>{{ prf.name }}</b>
+          </p>
+          <p class="card-text">
+            {{ prf.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
