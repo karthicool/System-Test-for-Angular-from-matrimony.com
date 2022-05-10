@@ -1,6 +1,14 @@
-{
+[
+  {
   "id": 1,
   "name": "Shruthi",
   "age": 26,
   "designation": "doctor"
+}, 
+  {
+  "id": 2,
+  "name": "deepa",
+  "age": 27,
+  "designation": "doctor"
 }
+]
